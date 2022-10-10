@@ -1,8 +1,9 @@
 import React from "react";
 import "./style.css";
-function Header(){
-  return <h1>메이크메이트:)</h1>
+function Header(props){
+  return <h1>{props.title}</h1>
 }
+
 function Nav(){
   return <nav>
     <ol>
@@ -22,7 +23,7 @@ function Article(){
 export default function App() {
   return (
     <div>
-      <Header></Header>
+      <Header title="리액트독학"></Header>
       <Nav></Nav>
       <Article></Article>
     </div>
